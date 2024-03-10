@@ -110,3 +110,14 @@ input  ->program1 /----fifo1(w)---\         fifo2(r) -> output
          program2 \----fifo1(r)---/         fifo2(w)
 ```
 
+#### 10
+
+```
+input  ->program1 /-----queue1----\         queue2 -> output
+                  |       |       |         ^
+             часть входа ... ... ...        |
+                  |       |       |         результат проверки
+                  V       V       V         |
+         program2 \-----queue1----/         queue2
+```
+
